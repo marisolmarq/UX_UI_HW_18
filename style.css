@@ -1,0 +1,81 @@
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+body {
+background: linear-gradient(to bottom, pink, rgb(243, 219, 223), white);
+width:80%;
+margin-left:auto;
+margin-right:auto;
+text-align: center;
+font-size: medium;
+
+}
+a {
+color:black;  
+}
+
+ul {
+display: table;
+margin: 0 auto;
+}
+
+.myPhoto img {
+    padding: 5px;
+    width: 200px;
+  }
+
+
+.contact img {
+    padding: 5px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;  
+}
+
+.flexContainer img {
+    width: 175px;
+}
+
+.workGrid img {
+  width: 300px;
+}
+
+.flexContainer {
+	display:flex;
+  width: 39%;
+	margin-left:auto;
+  margin-right: auto;
+	padding:10px;
+  flex-direction: row;
+}
+
+<!- My UX Skills section coded using CSS flex -->
+
+.item1 {
+  grid-area: myArea;
+}
+
+.workGrid {
+    display:flex;
+    margin:auto%;
+    flex-direction: column;
+    grid-template-rows:300px 300px 300px;
+    grid-template-columns:1fr;
+    grid-template-areas:"myArea" "myArea" "myArea";
+  }
+
+
+
+MEDIA QUERY AT BOTTOM
+@media only screen and (max-width 600)
+  .flexContainer {
+    display:column;
+    width:100%;
+    grid-template-rows:300px 300px 300px;
+    grid-template-columns:1fr;
+    grid-template-areas:"myArea" "myArea" "myArea";
+  }
+
